@@ -1,0 +1,25 @@
+# Binary builds
+grd
+dist/
+
+# Go
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+TEAM.md
+AGENTS.md
+.mycelium/
