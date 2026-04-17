@@ -75,6 +75,20 @@ The editor is modal, like vi. It has Normal, Insert, and Command modes.
 
 `grd integrate` tells you what to put in your rc file. `grd integrate -a` just does it for you (appends to bashrc/zshrc/config.fish and sets `git config --global alias.description`). After that you can use `git description` from anywhere.
 
+## Claude Code slash command
+
+If you use [Claude Code](https://github.com/anthropics/claude-code), there's a standalone slash command included (`grd-command.md`) that does the same thing without the binary — plus it can generate descriptions from your repo context.
+
+Copy it to your commands directory:
+
+```sh
+cp grd-command.md ~/.claude/commands/grd.md    # global
+# or
+cp grd-command.md .claude/commands/grd.md      # per-project
+```
+
+Then use `/grd show`, `/grd generate`, `/grd generate-branch`, or `/grd set my project does X`.
+
 ## License
 
 MIT
